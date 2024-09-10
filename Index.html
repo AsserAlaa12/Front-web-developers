@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Developers</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a nice background color */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Center the content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        /* Add a subtle box shadow to the container */
+        .container {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        /* Style the intro paragraph */
+        .intro {
+            font-style: italic;
+            color: #777;
+        }
+
+        /* Create a call-to-action button */
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style the form */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for background media */
+        .background-media {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1; /* Adjust opacity for visibility */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Front-End Developers</h1>
+        <p class="intro">
+            A front-end developer is a tech professional who focuses on designing and developing the visible part of websites and applications—the parts that users interact with. They turn website designs (often provided by web designers) into functional and interactive experiences using a combination of programming languages like HTML, CSS, and JavaScript.
+        </p>
+        <p>
+            Front-end developers create user interfaces (UI) that determine what each part of a site or application does and how it will look. When you visit a website, the design elements you see—the layout, buttons, animations—are all crafted by front-end developers.
+        </p>
+        <p>
+            If you're interested in front-end development, consider learning HTML, CSS, and JavaScript. These foundational languages will empower you to create beautiful and responsive web experiences.
+        </p>
+        <p>
+            <a class="cta-button" href="https://en.wikipedia.org/wiki/Front-end_web_development">Learn More</a>
+        </p>
+
+        <!-- Add a form here -->
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="experience">Experience Level:</label>
+            <select id="experience" name="experience">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+
+            <label for="resume">Upload Your Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+            <label for="newsletter">Subscribe to Newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Background audio and video -->
+    <audio class="background-media" autoplay loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video class="background-media" autoplay loop muted>
+        <source src="background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
